@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ppt {
+public class JokenpoJogoSimples {
     public static void main(String[] args) {
         Scanner addValor = new Scanner(System.in);
         int escolhaJ = 0;

@@ -1,13 +1,14 @@
 public class Porta {
     // atributos
-    boolean aberto;
-    boolean trancado;
-    double tamanhoCmquadrado;
-    String material;
-    String cor;
+    public boolean aberto;
+    private boolean trancado;
+    private double alturaCm;
+    private double larguraCm;
+    public String material;
+    public String cor;
 
     //métodos
-    void abrirPorta() {
+    public void abrirPorta() {
         if (this.aberto) {
             System.out.println("A porta já está aberta");
         } else if (this.trancado) {
@@ -18,7 +19,7 @@ public class Porta {
         }
     }
 
-    void fecharPorta() {
+    public void fecharPorta() {
         if (!this.aberto) {
             System.out.println("A porta já está fechada");
         } else {
@@ -27,7 +28,7 @@ public class Porta {
         }
     }
 
-    void trancarPorta() {
+    private void trancarPorta() {
         if (this.trancado) {
             System.out.println("A porta já está trancada");
         } else if (this.aberto) {
@@ -37,7 +38,7 @@ public class Porta {
         }
     }
 
-    void destrancarPorta() {
+    private void destrancarPorta() {
         if (!this.trancado) {
             System.out.println("A porta já está destrancada");
         } else {
@@ -46,7 +47,7 @@ public class Porta {
         }
     }
 
-    void portaEstado() {
+    private void portaEstado() {
         if (this.aberto) {
             System.out.println("A porta está aperta");
         } else {
@@ -57,7 +58,8 @@ public class Porta {
         } else {
             System.out.println("A porta está destrancada");
         }
-        System.out.println("A porta tem " + this.tamanhoCmquadrado + " centímetros quadrados");
+        System.out.println("A porta tem " + this.alturaCm + " centímetros de altura");
+        System.out.println("A porta tem " + this.larguraCm + " centímetros de largura");
         System.out.println("A porta é feita de " + material);
         System.out.println("A porta tem a cor " + cor);
     }

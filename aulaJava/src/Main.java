@@ -3,14 +3,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
         Scanner addValor = new Scanner(System.in);
 
         // setar idade (usado pra nada)
-        int idade;
+        /*int idade;
         System.out.println("Digite um valor para 'idade': ");
         idade = addValor.nextInt();
-        System.out.println("O valor de 'idade' é: " + idade);
+        System.out.println("O valor de 'idade' é: " + idade);*/
 
         // inutilizado
         String nome = "Bill";
@@ -30,14 +29,13 @@ public class Main {
 
         // referente ao molde porta
 
-        Porta portaMetal = new Porta();
+        /*Porta portaMetal = new Porta();
         
 
         portaMetal.material = "metal";
         portaMetal.larguraCm = 100;
         portaMetal.alturaCm = 320;
 
-        // falta finalizar o teste da função \\
-        portaMetal.portaEstado();
+        portaMetal.portaEstado();*/
     }
 }
