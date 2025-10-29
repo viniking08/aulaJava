@@ -47,7 +47,12 @@ public class Porta {
         }
     }
 
-    private void portaEstado() {
+    public void medirPorta(double largura, double altura) {     //medir e colocar o tamanho
+        this.alturaCm = altura;
+        this.larguraCm = largura;
+    }
+
+    public void portaEstado() {
         if (this.aberto) {
             System.out.println("A porta está aperta");
         } else {
