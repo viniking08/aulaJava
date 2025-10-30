@@ -6,6 +6,9 @@ public class Main {
         Scanner addValor = new Scanner(System.in);
         Penal penalRosa = new Penal("Algodão", "Rosa");
         Penal penalVerde = new Penal("Lã", "Verde");
+        BancoFinanceiro caixa = new BancoFinanceiro(0.50, "Caixa Econômica");
+
+
 
         // setar idade (usado pra nada)
 //        int idade;
@@ -44,20 +47,21 @@ public class Main {
 
         // atividade 1.3 (penal), objeto criado lá em cima
 
-        System.out.println(penalRosa.getCorPenal());
+
         penalRosa.setQntdCanetas(5);   //set
         penalRosa.setQntdLapiscor(18); //set
-        System.out.println(penalRosa.getQntdCanetas());
-        System.out.println(penalRosa.getQntdLapiscor());
-        System.out.println(penalRosa.isZiperCanetaAberto());
+        penalRosa.exibirInformacoes();
+
         System.out.println("//");
+
         penalVerde.setQntdLapiscor(25);  //set
-       penalVerde.setQntdCanetas(3);    //set
-        System.out.println(penalVerde.getQntdCanetas());
-        System.out.println(penalVerde.getQntdLapiscor());
-        System.out.println(penalVerde.isZiperCanetaAberto());
-        System.out.println(penalVerde.getCorPenal());
+        penalVerde.setQntdCanetas(3);    //set
+        penalVerde.exibirInformacoes();
 
+        System.out.println("-");
 
+        // atividade 1.4
+
+        caixa.abrirConta("094.044.444.04", "Carlos Alberto");
     }
 }

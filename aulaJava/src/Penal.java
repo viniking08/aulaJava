@@ -101,6 +101,14 @@ public class Penal {
             System.out.println("O zíper do compartimento de canetas já está fechado.");
         }
     }
+    public void exibirInformacoes() {
+        System.out.println("Quantidade de canetas: " + qntdCanetas);
+        System.out.println("Quantidade de lápis de cor: " + qntdLapiscor);
+        System.out.println("Zíper de caneta aberto? " + ziperCanetaAberto);
+        System.out.println("Zíper de lápis de cor aberto? " + ziperCorAberto);
+        System.out.println("Cor do penal: " + corPenal);
+        System.out.println("Material do penal: " + materialPenal);
+    }
 }
 
 
