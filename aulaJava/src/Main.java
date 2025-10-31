@@ -62,6 +62,25 @@ public class Main {
 
         // atividade 1.4
 
-        caixa.abrirConta("094.044.444.04", "Carlos Alberto");
+        //faltar fazer
+
+        // atividade 1.5
+
+        Atirador atirador1 = new Atirador("Vini", "SKS", "Paquistão", 75);
+        Atirador atirador2 = new Atirador("Guilherme", "Guardian", "Argentina", 75);
+
+        Batalha batalhaLendaria = new Batalha(atirador1, atirador2);
+
+        for (int i = 0; i < 10; i++) {
+            batalhaLendaria.batalhar();
+        }
+
+
+        System.out.println("-");
+        atirador1.jogadorStatus();
+        System.out.println("-");
+        atirador2.jogadorStatus();
+        System.out.println("-");
+
     }
 }
