@@ -82,6 +82,7 @@ public class Main {
     }
 }
 
+/*
         // atividade 1.5
 
         Atirador atirador1 = new Atirador("Vini", "SKS", "Paquistão", 75);
@@ -102,5 +103,6 @@ public class Main {
 
     }
 
+
+ */
     // resto das atividades nas packages
-}
