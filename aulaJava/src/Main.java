@@ -6,7 +6,6 @@ public class Main {
         Scanner addValor = new Scanner(System.in);
         Penal penalRosa = new Penal("Algodão", "Rosa");
         Penal penalVerde = new Penal("Lã", "Verde");
-        BancoFinanceiro caixa = new BancoFinanceiro(0.50, "Caixa Econômica");
 
 
 
@@ -30,6 +29,10 @@ public class Main {
 //        for (int index = 0; index < names.size(); index++) {
 //            System.out.println(names.get(index));
 //        }
+
+
+
+
 
 
         // referente ao molde porta (atividade 1.1 e 1.2)
@@ -62,7 +65,22 @@ public class Main {
 
         // atividade 1.4
 
-        //faltar fazer
+        BancoFinanceiro banco = new BancoFinanceiro("123.456.789-00", "João Silva", 1000.0);
+
+        banco.abrirConta(banco.getCpf(), banco.getNomeTitular());
+
+        banco.estadoBanco();
+
+        double novoSaldo = banco.aplicarJuros(banco.getSaldo());
+        banco.setSaldo(novoSaldo);
+
+        banco.sacar(200);
+
+        banco.transferir("ContaDestino123");
+
+        banco.estadoBanco();
+    }
+}
 
         // atividade 1.5
 
@@ -83,4 +101,6 @@ public class Main {
         System.out.println("-");
 
     }
+
+    // resto das atividades nas packages
 }
